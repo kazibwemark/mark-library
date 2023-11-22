@@ -1,0 +1,974 @@
+<html>
+  <head>
+    <title>Facebook</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fc-navbar">
+      <a class="navbar-brand" href="#">
+        <div class="fc-icon-navbar fc-icon-logo-facebook"></div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="input-group fc-input-group-navbar mb-3">
+          <input
+            type="text"
+            class="form-control fc-search-top"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="button-addon2"
+          />
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link fc-nav-link" href="#">
+              <img
+                src="images/profile-default.png"
+                class="rounded-circle"
+                style="width: 22px; margin-right: 4px"
+              />
+              Name
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fc-nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fc-nav-link" href="#">Create</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div class="fc-icon-navbar fc-icon-notificao-amizade"></div>
+            </a>
+            <div
+              class="dropdown-menu fc-dropdown"
+              aria-labelledby="navbarDropdown"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <span class="title">Friend Requets</span>
+                </div>
+                <div class="col-md-6">
+                  <a href="#">Find Friends</a>
+                  <a href="#">Settings</a>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="row">
+                <div class="col-md-2" style="text-align: right">
+                  <img
+                    src="images/profile-default.png"
+                    class="rounded-circle"
+                    style="width: 44px; margin-left: 10px"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <a href="#"></a><br />
+                  <button class="fc-btn fc-btn-primary">Confirm</button>
+                  <button class="fc-btn fc-btn-default">Delete</button>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="row">
+                <div class="col-md-2" style="text-align: right">
+                  <img
+                    src="images/photo1.jpg"
+                    class="rounded-circle"
+                    style="width: 44px; margin-left: 10px"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <a href="#">Kazibwe Mark</a><br />
+                  <button class="fc-btn fc-btn-primary">Confirm</button>
+                  <button class="fc-btn fc-btn-default">Delete</button>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="row">
+                <div class="col-md-2" style="text-align: right">
+                  <img
+                    src="images/photo1.jpg"
+                    class="rounded-circle"
+                    style="width: 44px; margin-left: 10px"
+                  />
+                </div>
+                <div class="col-md-10">
+                  <a href="#"></a><br />
+                  <button class="fc-btn fc-btn-primary">Confirm</button>
+                  <button class="fc-btn fc-btn-default">Delete</button>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div style="text-align: center">
+                <a href="#">See All</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div class="fc-icon-navbar fc-icon-notificao-messenger"></div>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div class="fc-icon-navbar fc-icon-notificao-notificacoes"></div>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div class="fc-icon-navbar fc-icon-notificao-ajuda"></div>
+            </a>
+            <div
+              class="dropdown-menu fc-dropdown-secondary"
+              aria-labelledby="navbarDropdown"
+            >
+              <span class="title" style="margin-left: 10px"
+                ><b>Quick Help</b></span
+              >
+              <input class="fc-form-control" placeholder="How can we help?" />
+
+              <a class="dropdown-item" href="#">Home Page</a>
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Chat and Messages</a>
+              <a class="dropdown-item" href="#">Account Security</a>
+              <a class="dropdown-item" href="#">Privacy</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <div class="fc-icon-dropdown fc-icon-verificacao-privacidade">
+                  <label class="fc-label-item">Privacy Checkup</label>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <div class="fc-icon-dropdown fc-icon-privacidade">
+                  <label class="fc-label-item">Privacy Shortcuts</label>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <label class="fc-label-item">Support Inbox</label>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <label class="fc-label-item">Report a problem</label>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div class="fc-icon-navbar fc-icon-notificao-mais"></div>
+            </a>
+            <div
+              class="dropdown-menu fc-dropdown-secondary"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item fc-dropdown-item" href="#"
+                >Manage Groups</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item fc-dropdown-item" href="#"
+                >Addvertising on Facebook</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item fc-dropdown-item" href="#"
+                >Activity Log</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item fc-dropdown-item" href="#"
+                >News Feed Preferences</a
+              >
+              <a class="dropdown-item fc-dropdown-item" href="#">Settings</a>
+              <a class="dropdown-item fc-dropdown-item" href="#"
+                >Switch to New Facebook</a
+              >
+              <a class="dropdown-item fc-dropdown-item" href="#">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="fb-profile-block">
+            <div class="fb-profile-block-thumb cover-container"></div>
+            <div class="profile-img">
+              <a href="#">
+                <img
+                  src="images/photo1.jpg"
+                  alt=""
+                  title=""
+                />
+              </a>
+            </div>
+            <div class="profile-name d-flex justify-content-end">
+              <h2>Kazibwe Mark</h2>
+              <button
+              style="
+                width: 150px;
+                height: 35px;
+                border: 1px solid #ccd0d5;
+                border-radius: 2px;
+                color: #4b4f56;
+                background-color: #f5f6f7;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 300px;
+              "
+            >
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+              Edit profile
+            </button>
+            <button
+              style="
+             
+                height: 35px;
+                border: 1px solid #ccd0d5;
+                border-radius: 2px;
+                color: #4b4f56;
+                background-color: #f5f6f7;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 10px;
+               
+              "
+            >
+            <img src="log.png" style="width: 30px; margin-right: 4px" />
+          
+              Activity Log
+            </button>
+            <button
+              style="
+                
+                height: 35px;
+                border: 1px solid #ccd0d5;
+                border-radius: 2px;
+                color: #4b4f56;
+                background-color: #f5f6f7;
+                font-weight: bold;
+                text-align: center;
+            
+               
+              "
+            >
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+              
+            </button>
+            
+
+        
+            </div>
+
+            <div class="fb-profile-block-menu">
+              <div class="block-menu">
+                <ul>
+                  <li><a href="#">Timeline</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">Friends</a></li>
+                  <li><a href="#">Photos</a></li>
+                  <li><a href="#">More...</a></li>
+                </ul>
+              </div>
+              <div class="block-menu">
+                <ul>
+                  <li><a href="#">Timeline</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">Friends</a></li>
+                  <li><a href="#">Photos</a></li>
+                  <li><a href="#">More...</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <br />
+
+          <div class="list-group">
+            <div class="card pl-2 pt-2 pr-2" style="height:650px">
+              <a href="#" style="color: #1c1e21">
+                <img
+                  src="icons8-globe-64.png"
+                  style="width: 22px; margin-right: 4px"
+                />
+                Intro
+              </a>
+              <div class="bio d-flex justify-content-center">
+                <img src="msg.png" style="width: 40px; margin-right: 4px" />
+              </div>
+
+              <div
+                class="add bio d-flex justify-content-center"
+                style="font-size: 12px; color: gray"
+              >
+                Add a short bio to tell people more about yourself.
+              </div>
+              <div class="addBio d-flex justify-content-center"
+              style="font-size: 14px; color: #3578e5;"> Add Bio
+            </div>
+
+            <hr />
+            <div class="job pl-2 pt-2 pr-2">
+                <a href="#" style="color: #1c1e21">
+                    <img
+                      src="job.png"
+                      style="width: 22px; margin-right: 4px"
+                    />
+                    Intern at <span style="color: #385898;">Wezapps</span>
+                  </a>
+
+
+            </div>
+            <div class="job pl-2 pt-0 pr-2">
+                <a href="#" style="color: #1c1e21">
+                    <img
+                      src="job.png"
+                      style="width: 22px; margin-right: 4px"
+                    />
+                    Intern at <span style="color: #385898;">Wezapps</span>
+                  </a>
+
+
+            </div>
+            <div class="job pl-2 pt-0 pr-2">
+                <a href="#" style="color: #1c1e21">
+                    <img
+                      src="job.png"
+                      style="width: 22px; margin-right: 4px"
+                    />
+                    Intern at <span style="color: #385898;">Wezapps</span>
+                  </a>
+
+
+            </div>
+
+            
+            <div class="button pl-4 pr-4 pt-4 mt-5">
+              <button
+                style="
+                  width: 100%;
+                  border: 1px solid #ccd0d5;
+                  border-radius: 2px;
+                  color: #4b4f56;
+                  background-color: #f5f6f7;
+                  font-weight: bold;
+                  text-align: center;
+                "
+              >
+                Edit Details
+              </button>
+            </div>
+            <div class="row mt-4">
+                <div class="col"><a href="#">
+                
+                    <img src="images/mrk.jpg" alt="" title=""style="width: 60px; margin-top:6px;">
+                      
+                
+    
+                    </a></div>
+                <div class="col"><a href="#">
+                
+                    <img src="images/photo2.jpg" alt="" title=""style="width: 60px; margin-top:6px;">
+                      
+                
+    
+                    </a></div>
+                <div class="col"><a href="#">
+                
+                    <img src="images/photo3.jpg" alt="" title=""style="width: 60px; margin-top:6px;">
+                      
+                
+    
+                    </a></div>
+
+            </div>
+            <div class="row">
+                <div class="col"><a href="#">
+                
+                    <img src="images/photo4.jpg" alt="" title=""style="width: 60px; margin-top:6px;">
+                      
+                
+    
+                    </a></div>
+                <div class="col"><a href="#">
+                
+                    <img src="images/photo5.jpg" alt="" title=""style="width: 60px; margin-top:6px;">
+                      
+                
+    
+                    </a></div>
+                <div class="col"><a href="#">
+                
+                    <img src="images/photo6.jpg" alt="" title=""style="width: 60px; margin-top:6px;">
+                      
+                
+    
+                    </a></div>
+
+            </div>
+            <div class="row">
+                <div class="col"><a href="#">
+                
+    
+                
+    
+                    </a></div>
+
+            </div>
+
+
+           
+            <div class="button pl-4 pr-4 pt-4 mt-3">
+                <button
+                  style="
+                    width: 100%;
+                    border: 1px solid #ccd0d5;
+                    border-radius: 2px;
+                    color: #4b4f56;
+                    background-color: #f5f6f7;
+                    font-weight: bold;
+                    text-align: center;
+                  "
+                >
+                  Edit Featured
+                </button>
+
+                
+              </div>
+              
+          </div>
+          
+
+            
+        </div>
+        <div class="col-md-4 ">
+            <br>
+            <div class="row">
+                <div class="list-group">
+                    <div class="card " style="height: 250px;width:350px ;">
+                        <a href="#" style="color: #1c1e21">
+                            <img
+                              src="pic.png"
+                              style="width: 44px;"
+                            />
+                            <span style=" font-size: 15px;color: black;">Photos</span>
+                            <span style="margin-left: 170px;color: #385898;;">Add Photos</span>
+                           
+                          </a>
+
+                          <div class="row ">
+                            <div class="col"><a href="#">
+                            
+                                <img src="images/photo5.jpg" alt="" title=""style="width: 60px; margin-top:6px;">
+                                  
+                            
+                
+                                </a></div>
+                            <div class="col"><a href="#">
+                            
+                                <img src="images/photo6.jpg" alt="" title=""style="width: 60px; margin-top:6px;">
+                                  
+                            
+                
+                                </a></div>
+                            <div class="col"><a href="#">
+                            
+                                <img src="images/photo7.jpg" alt="" title=""style="width: 60px; margin-top:6px;">
+                                  
+                            
+                
+                                </a></div>
+                                <div class="row pl-0 ml-0">
+                                    <div class="col pr-4 mr-4"><a href="#">
+                                    
+                                    
+                                    
+                        
+                                        </a></div>
+                    
+                                </div>
+                                <div class="row pl-0 ml-0">
+                                    <div class="col pr-4 mr-4"><a href="#">
+                                    
+                        
+                                        </a></div>
+                    
+                                </div>
+            
+                        </div>
+                          
+                        
+                    </div>
+                    </div>
+                    
+            
+            </div>
+
+        
+         
+
+          
+            
+        </div>
+        <div class="col-md-4 ">
+            <br>
+            <div class="row">
+                <div class="list-group">
+                    <div class="card " style="height: 300px;width:350px ;">
+                        <a href="#" style="color: #1c1e21">
+                            <img
+                              src="friend.png"
+                              style="width: 44px;"
+                            />
+                            <span style=" font-size: 15px;color: black;">Friends .</span>
+                            1000
+                            <span style="margin-left: 130px;color: #385898;;">Find Friends</span>
+                           
+                        </a>
+
+                         <div class="row pl-0 ml-0">
+                            <div class="col pr-4 mr-4"><a href="#">
+                            
+                               
+                
+                                </a><span style="color:#385898 ;"></span>
+                            </div>
+                            
+            
+                        </div>
+
+                        <div class="row pl-0 ml-0">
+                            <div class="col pr-4 mr-4"><a href="#">
+                            
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" title=""style="width: 60px; margin-top:6px;">
+                                  
+                            
+                
+                                </a><span style="color:#385898 ;">Kazibwe Mark</span>
+                            </div>
+                            <div class="col pr-4 mr-4"><a href="#">
+                            
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" title=""style="width: 60px; margin-top:6px;">
+                                  
+                            
+                
+                                </a><span style="color:#385898 ;">Kazibwe Mark</span>
+                            </div>
+                            <div class="col"><a href="#">
+                            
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" title=""style="width: 60px; margin-top:6px;">
+                                  
+                            
+                
+                                </a><span style="color:#385898 ;">Kazibwe Mark</span>
+                            </div>
+
+            
+                        </div>
+                        <div class="row pl-0 ml-0">
+                            <div class="col pr-4 mr-4"><a href="#">
+                            
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" title=""style="width: 60px; margin-top:6px;">
+                                  
+                            
+                
+                                </a><span style="color:#385898 ;">Kazibwe Mark</span>
+                            </div>
+                            <div class="col pr-4 mr-4"><a href="#">
+                            
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" title=""style="width: 60px; margin-top:6px;">
+                                  
+                            
+                
+                                </a><span style="color:#385898 ;">Kazibwe Mark</span>
+                            </div>
+                            <div class="col"><a href="#">
+                            
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" title=""style="width: 60px; margin-top:6px;">
+                                  
+                            
+                
+                                </a><span style="color:#385898 ;">Kazibwe Mark</span>
+                            </div>
+
+            
+                        </div>
+                        
+                    </div>
+                    </div>
+            
+            </div>
+         
+
+          
+            
+        </div>
+        <div class="col-md-4 ">
+            <br>
+            <div class="row">
+                <div class="list-group">
+                    <div class="card " style="height: 200px;width:350px ;">
+                        <a href="#" style="color: #1c1e21">
+                            <img
+                              src="life.png"
+                              style="width: 44px;"
+                            />
+                            <span style=" font-size: 15px; color: black;">Life Events</span>
+                            
+                            <span style="margin-left: 170px;color: #385898;;">Create</span>
+                           
+                          </a>
+                        
+                    </div>
+                    </div>
+            
+            </div>
+
+            
+         
+
+          
+            
+        </div>
+
+        <div class="col-md-4 ">
+            <br>
+            <div class="row">
+                <div class="list-group">
+                    <div class="card " style="height: 200px;width:350px ;">
+                        <a href="#" style="color: #1c1e21">
+                            <img
+                              src="ques.png"
+                              style="width: 44px;"
+                            />
+                            <span style=" font-size: 15px; color: black;">Did You Know </span>
+                            
+                            <span style="margin-left: 100px;color: #385898;;">
+                                Answer Question</span>
+                           
+                          </a>
+                        
+                    </div>
+                    </div>
+            
+            </div>
+
+            
+         
+
+          
+            
+        </div>
+        <div class="col-md-4 ">
+            <br>
+            <div class="row">
+                <div class="list-group">
+                    <div class="card d-inline  " style="height: 100px;width:350px ;">
+                         <span style="margin-left: 5px;
+                        margin-top: 10px;">Português (Brasil)</span> ·
+              <a href="#">ês (Portugal)
+
+              </span></a> ·
+              <a href="#">English (US)</a> · <a href="#">Español (España)</a> ·
+              <a href="#" style="margin-left: 2px;">Français (France)</a>
+                        
+                    </div>
+                    </div>
+            
+            </div>
+         
+
+          
+            
+        </div>
+        <div class="col-md-4 d-inline">
+            <br>
+            <div class="row">
+                <div class="list-group">
+                    <span>
+                        Kazibwe Mark Privacy · Terms · Ads · Ad options · Cookies · More Facebook © 2019
+                      </span>
+                    
+                    
+                    </div>
+            
+            </div>
+         
+
+          
+            
+        </div>
+        
+      </div>
+      
+
+
+      <div class="col-md-6">
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header fc-card-header">Create post</div>
+              <div class="row">
+                <div class="col-md-2" style="text-align: right">
+                  <img
+                    src="images/photo1.jpg"
+                    class="rounded-circle"
+                    
+                  />
+                </div>
+                <div class="col-md-10">
+                  <textarea
+                    class="form-control"
+                    placeholder="What's on your mind,Name?"
+                  ></textarea>
+                </div>
+              </div>
+              <hr />
+
+              <div class="row" style="margin-left: 0px">
+                <div class="col-md-3">
+                  <button class="fc-btn fc-btn-rounded">
+                    <div class="fc-icon fc-icon-foto-video">
+                      <label>Photo/Video</label>
+                    </div>
+                  </button>
+                </div>
+                <div class="col-md-3">
+                  <button class="fc-btn fc-btn-rounded">
+                    <div class="fc-icon fc-icon-marcar-amigos">
+                      <label>Tag Friends</label>
+                    </div>
+                  </button>
+                </div>
+                <div class="col-md-3">
+                  <button class="fc-btn fc-btn-rounded">
+                    <div class="fc-icon fc-icon-sentimentos">
+                      <label>Feeling/...</label>
+                    </div>
+                  </button>
+                </div>
+                <div class="col-md-2">
+                  <button class="fc-btn fc-btn-rounded" style="width: 40px">
+                    <div class="fc-icon fc-icon-mais"></div>
+                  </button>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <div style="font-size: 14px; color: gray">
+                  <img
+                    src="images/photo1.jpg"
+                    class="rounded-circle"
+                    style="width: 40px; margin-right: 4px"
+                  />
+                  <a href="#"><b>Name</b></a> Shared <a href="#">link</a> in the
+                  group
+                  <a href="#">Kazibwe Mark</a>
+                </div>
+                <br />
+                <img src="images/photo1.jpg" style="width: 50%" 
+                    
+                />
+              
+                <br /><br />
+                <a href="#">Kazibwe Mark</a><br />
+                <span>
+            
+                </span>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-md-12">
+                  <div style="text-align: right">
+                    <span style="margin-right: 24px"
+                      >1 share 13 thousand views</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row" style="margin-left: 0px">
+                <div class="col-md-3">
+                  <button class="fc-btn fc-btn-white">
+                    <div class="fc-icon">
+                      <label>Like</label>
+                    </div>
+                  </button>
+                </div>
+                <div class="col-md-3">
+                  <button class="fc-btn fc-btn-white">
+                    <div class="fc-icon fc-icon-comentar">
+                      <label>Comment</label>
+                    </div>
+                  </button>
+                </div>
+                <div class="col-md-3">
+                  <button class="fc-btn fc-btn-white">
+                    <div class="fc-icon fc-icon-compartilhar">
+                      <label>share</label>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <div style="font-size: 14px; color: gray">
+                  <img
+                    src="images/photo1.jpg"
+                    class="rounded-circle"
+                    style="width: 40px; margin-right: 4px"
+                  />
+                  <a href="#"><b>Name</b></a> Shared <a href="#">link</a> In the
+                  group
+                  <a href="#">Kazibwe Mark</a>
+                </div>
+                <br />
+                <img src="images/photo2.jpg" style="width: 50%" />
+                <br /><br />
+                <a href="#"></a><br />
+                <span>
+                  Mark's profile page.
+                </span>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-md-12">
+                  <div style="text-align: right">
+                    <span style="margin-right: 24px"
+                      >10 share 13 thousand views</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="row" style="margin-left: 0px">
+                <div class="col-md-3">
+                  <button class="fc-btn fc-btn-white">
+                    <div class="fc-icon">
+                      <label>Like</label>
+                    </div>
+                  </button>
+                </div>
+                <div class="col-md-3">
+                  <button class="fc-btn fc-btn-white">
+                    <div class="fc-icon fc-icon-comentar">
+                      <label>Comment</label>
+                    </div>
+                  </button>
+                </div>
+                <div class="col-md-3">
+                  <button class="fc-btn fc-btn-white">
+                    <div class="fc-icon fc-icon-compartilhar">
+                      <label>Share</label>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+</html>
